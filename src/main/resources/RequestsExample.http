@@ -1,0 +1,48 @@
+###
+GET http://localhost:8080/books/1
+
+
+###
+GET http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "offset": 0,
+  "limit": 100
+}
+
+
+###
+GET http://localhost:8080/books/getByLanguageAndCategory
+Content-Type: application/json
+
+{  "language": "Русский",
+  "category": "Фэнтази"
+}
+
+
+###
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "name": "Семиевие",
+  "language": "Русский",
+  "category": "Научная фантастика"
+}
+
+
+###
+PATCH http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "id" : 5,
+  "name": "Подросток",
+  "language": "Русский",
+  "category": "Классика"
+}
+
+###
+DELETE http://localhost:8080/books/5
+
