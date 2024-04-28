@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-data
+  datasource:
+    url: jdbc:postgresql://localhost:5432/books
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+server:
+  8085
