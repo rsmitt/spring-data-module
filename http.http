@@ -1,0 +1,37 @@
+### Add book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "name": "newBookName",
+  "language": "language1",
+  "category": "category2"
+}
+
+### Delete book
+DELETE http://localhost:8080/books/2
+
+### Update book
+PUT http://localhost:8080/books/3
+Content-Type: application/json
+
+{
+  "name": "updatedBookName",
+  "language": "language1",
+  "category": "category2"
+}
+
+### Get all books
+GET http://localhost:8080/books
+
+### Get  books by category
+GET http://localhost:8080/books/category/category2
+
+### Get  books by language
+GET http://localhost:8080/books/language/language1
+
+
+
+
+
+
